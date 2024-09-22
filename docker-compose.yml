@@ -1,0 +1,16 @@
+version: '3'
+services:
+    db:
+        image: mysql
+        container_name: db
+        restart: always
+        tty: true
+        ports:
+            - "3307:3306"
+        volumes:
+            - ./_docker/mysql:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: shop_db
+            MYSQL_ROOT_PASSWORD: root
+            SERVICE_TAGS: dev
+            SERVICE_NAME: mysql

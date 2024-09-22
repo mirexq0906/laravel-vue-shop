@@ -1,0 +1,21 @@
+#app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+html {
+    color: #334155;
+    font-size: 16px;
+}
+.container {
+    margin: 0 auto;
+}
+.p-carousel-next-button,
+.p-carousel-prev-button {
+    box-shadow:
+        0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border: 1px solid !important;
+    flex-shrink: 0;
+}
